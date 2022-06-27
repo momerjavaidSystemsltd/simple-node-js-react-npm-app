@@ -1,6 +1,6 @@
 FROM node:10-alpine
 WORKDIR nodeapp
-COPY package.json
+COPY package.json .
 RUN npm install
 COPY . .
 EXPOSE 3000
